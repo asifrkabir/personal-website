@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.half-width {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 5%;
+}
+
+.half-width img {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+
+.header {
+    background-image: url("images/header-bg.png");
+    background-repeat: no-repeat;
+}
+
+section {
+    height: 500px;
+    padding-bottom: 200px;
+}
+
+.biography {
+    background-image: url("images/biography-bg.png");
+    background-repeat: no-repeat;
+}
+
+.third-width{
+    flex: 33%;
+    padding: 10px;
+}
+
+.latest-work{
+    background-image: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+}
+
+.latest-work-images{
+    display: flex;
+    margin: 50px;
+    padding: 0 40px;
+}
+
+.latest-work-images img{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    background-image: url("images/footer-bg.png");
+}
+
+#copyright{
+    padding-top: 200px;
+}
