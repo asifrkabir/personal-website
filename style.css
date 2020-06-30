@@ -5,25 +5,30 @@ body {
 
 .half-width {
     width: 40%;
-    float: left;
+    display: inline-block;
     margin-left: 5%;
-    padding-left: 5%;
+    margin-top: 10px;
+    position: relative;
+    max-width: 500px;
+    
 }
 
 .half-width img {
-    width: 100%;
-    height: 50%;
-    top: 50%;
+    width: 140%;
 }
 
 .header {
     background-image: url("images/header-bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
-    height: 500px;
+    height: 600px;
     padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .biography {
@@ -37,6 +42,7 @@ section {
 }
 
 .latest-work{
+    padding-top: 100px;
     background-image: url("images/latest-work-bg.png");
     background-repeat: no-repeat;
 }
@@ -61,4 +67,70 @@ footer{
 
 #copyright{
     padding-top: 200px;
+}
+
+#blue-highlight{
+    color: rgb(0, 195, 255);
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 900px;
+}
+
+@keyframes animation1{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+.button-blue{
+    text-decoration: none;
+    background-color: rgb(225, 245, 243);
+    border: 2px solid rgb(72, 243, 220);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.button-blue:hover {
+    text-decoration: none;
+    background: linear-gradient(45deg, rgb(54, 143, 245), rgb(72, 243, 220));
+    background-size: 400%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+.button-red{
+    text-decoration: none;
+    background-color: rgb(247, 237, 237);
+    border: 2px solid rgb(245, 54, 54);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+.button-red:hover{
+    text-decoration: none;
+    background: linear-gradient(45deg, rgb(245, 54, 54), rgb(241, 113, 120));
+    background-size: 400%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
 }
