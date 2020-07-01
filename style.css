@@ -166,6 +166,7 @@ footer{
 
 .button-contact:hover{
     transform: scale(1.1);
+    width: 70%;
 }
 
 .button-contact p{
