@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .half-width {
@@ -23,7 +25,7 @@ body {
     background-size: cover;
 }
 
-section {
+.header, .biography {
     height: 600px;
     padding-bottom: 200px;
     display: flex;
@@ -36,46 +38,172 @@ section {
     background-repeat: no-repeat;
 }
 
-.third-width{
-    flex: 33%;
-    padding: 10px;
+.biography p{
+    text-align: justify;
+}
+
+#color-theory{
+    color: whitesmoke;
+    padding: 0 5px;
+    font-size: 20px;
+    font-weight: 900;
+    background: linear-gradient(45deg, rgb(248, 80, 80), rgb(250, 189, 75), rgb(255, 255, 0),rgb(135, 238, 135), rgb(112, 112, 243), rgb(146, 22, 235), rgb(238, 130, 238) );
+    border-radius: 20px;
+    background-size: 400%;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
 }
 
 .latest-work{
     padding-top: 100px;
+    padding-bottom: 200px;
     background-image: url("images/latest-work-bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.latest-work h2{
+    padding-bottom: 80px;
 }
 
 .latest-work-images{
     display: flex;
-    margin: 50px;
-    padding: 0 40px;
+    padding: 0 10%;
 }
 
 .latest-work-images img{
     width: 100%;
+    transition: 0.6s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#latest-work-blue{
+    border: 3px solid rgb(196, 248, 248);
+}
+
+#latest-work-blue:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 40px rgb(0, 240, 240);
+}
+
+#latest-work-green{
+    border: 3px solid rgb(150, 240, 195);
+}
+
+#latest-work-green:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 40px rgb(7, 236, 121);
+}
+
+#latest-work-orange{
+    border: 3px solid rgb(248, 211, 169);
+}
+
+#latest-work-orange:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 40px rgb(245, 143, 26);
+}
+
+.third-width{
+    padding: 20px;
 }
 
 .center{
     text-align: center;
+    margin: 0 auto;
 }
 
 footer{
     background-image: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client h2{
+    padding-bottom: 50px;
+}
+
+.client h4{
+    margin-bottom: -10px;
+}
+
+#client-name{
+    font-size: 20px;
+}
+
+.client p{
+    margin-bottom: 40px;
+}
+
+.quotation-double{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.button-contact{
+    background: linear-gradient(45deg, rgb(240, 7, 96), rgb(241, 62, 62), rgb(238, 178, 67));
+    background-size: 400%;
+    text-decoration: none;
+    border-radius: 70px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-decoration: none;
+    padding-top: 5px;
+    color: white;
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    box-shadow: 0px 0px 20px dimgray;
+    transition: 1s;
+}
+
+.button-contact:hover{
+    transform: scale(1.1);
+}
+
+.button-contact p{
+    font-size: 13px;
+}
+
+.button-contact h3{
+    padding-bottom: 50px;
+    padding-top: 0px;
+    margin: 0;
 }
 
 #copyright{
     padding-top: 200px;
 }
 
-#blue-highlight{
+.blue-highlight{
     color: rgb(0, 195, 255);
 }
 
 h1{
     font-size: 40px;
     font-weight: 900px;
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p{
+    line-height: 1.8;
+}
+
+h4{
+    width: 30%;
+    margin: 0 auto;
 }
 
 @keyframes animation1{
@@ -93,6 +221,9 @@ h1{
     border: 2px solid rgb(72, 243, 220);
     padding: 10px 20px;
     border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(23, 237, 245);
+    color: black;
+    transition: 0.5s;
 }
 
 .button-blue:hover {
@@ -118,6 +249,9 @@ h1{
     padding: 10px 20px;
     border-radius: 30px;
     font-weight: 900;
+    color: black;
+    box-shadow: 0px 0px 20px rgb(192, 83, 83);
+    transition: 0.5s;
 }
 
 .button-red:hover{
@@ -134,3 +268,24 @@ h1{
     animation-direction: alternate;
     animation-timing-function: ease-out;
 }
+
+.button-glow{
+    box-shadow: 0px 0px 20px rgb(192, 83, 83);
+    color: white;
+    border: none;
+    background: linear-gradient(45deg, rgb(245, 54, 54), rgb(241, 113, 120));
+}
+
+.setup{
+    background-image: url("images/desk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 300px;
+    margin: 100px 0;
+}
+
+.setup-text{
+    width: 40%;
+}
+

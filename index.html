@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Personal Website</title>
 </head>
 
 <body>
+
+    <!--Header-->
+
     <section class="header">
         <div class="half-width">
-            <h2>Hello I'm</h2>
-            <h1 id="blue-highlight">Jack Smith</h1>
-            <p>You might have seen me jumping, climbing buildings, and stopping trains. But nobody pays me a dime for
-                that work.</p>
+            <h2>Hello<span class="blue-highlight">.</span> I'm</h2>
+            <h1 class="blue-highlight">Asif Rezwan Kabir.</h1>
+            <p>I'm a Professional Web Developer and Graphic Designer located in Dhaka, Bangladesh<span class="blue-highlight">.</span></p>
             <br>
             <a class="button-blue" href="https://www.linkedin.com/company/programminghero/" target="_blank">HIRE ME</a>
         </div>
@@ -23,54 +26,73 @@
             <img src="images/profile1.png" alt="profile picture 1">
         </div>
     </section>
+
+    <!--Biography-->
+
     <section class="biography">
         <div class="half-width">
             <img src="images/profile2.png" alt="profile picture 2">
         </div>
         <div class="half-width">
             <h2>Biography</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius non placeat libero laborum, a aliquid ab
-                hic voluptates, aperiam similique doloremque labore provident reprehenderit porro nostrum culpa, quia
-                sed dolore.</p>
+            <p>I am a Computer Science undergrad who recently started delving into Web Development and <span id="color-theory">Color Theory</span>. Colors and Codes fascinate me, and I welcome any opportunity to combine the two.</p>
             <br>
             <a  class="button-red" href="https://www.linkedin.com/company/programminghero/" target="_blank">DOWNLOAD CV</a>
         </div>
     </section>
+
+    <!--Latest Work-->
+
     <section class="latest-work">
         <div>
-            <h2 class="center">My Latest Work</h2>
+            <h2 class="center">My Latest Works</h2>
         </div>
         <div class="latest-work-images">
             <div class="third-width">
-                <img src="images/work-1.png" alt="image of portfolio">
+                <img id="latest-work-blue" src="images/work-1.png" alt="image of portfolio 1">
             </div>
             <div class="third-width">
-                <img src="images/work-2.jpg" alt="image of portfolio">
+                <img id="latest-work-green" src="images/work-2.jpg" alt="image of portfolio 2 ">
             </div>
             <div class="third-width">
-                <img src="images/work-3.jpg" alt="image of portfolio">
+                <img id="latest-work-orange" src="images/work-3.jpg" alt="image of portfolio 3">
             </div>
         </div>
     </section>
 
+    <!--My Setup (Bonus Section)-->
+
+    <section class="setup">
+        <div class="setup-text">
+            <h2>My Desk Setup</h2>
+            <p>After countless iterations, I have finally put together the perfect desk setup for a seamless workflow.</p>
+            <br>
+            <a  class="button-red button-glow" href="https://www.youtube.com/watch?v=UCaCj9y7rB8" target="_blank">CHECK IT OUT</a>
+        </div>
+    </section>
+
+    <!--Footer-->
 
     <footer class="center">
-        <div>
+        <div class="client">
             <h2>What Clients Are Saying</h2>
-            <h4>Bruce Moccy</h4>
-            <p>Founder and Ceo Alies</p>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet eligendi similique atque quam rem deserunt exercitationem possimus ipsam voluptates nemo quidem ut, alias, officia sequi nulla, voluptate illum doloribus?</h4>
+            <h4 id="client-name">Bruce Wayne</h4>
+            <p>Founder and Ceo BatMobiles</p>
+            <h4><span class="blue-highlight quotation-double">"</span>This guy is completely useless. I doubt he even knows the full form of HTML. Not recommended at all.<span class="blue-highlight quotation-double">"</span></h4>
         </div>
-        <div>
-            <a href="https://www.linkedin.com/company/programminghero/" target="_blank">
+        <div class="button-contact">
+            <a class="button-contact" href="https://www.linkedin.com/company/programminghero/" target="_blank">
                 <p>Leave me a message at</p>
                 <h3>asifrkabir20@gmail.com</h3>
             </a>
         </div>
         <div id=copyright>
-            <p>@ Asif Rezwan Kabir 2020, all rights reserved.</p>
+            <p>&#169; Asif Rezwan Kabir 2020. All Rights Reserved.</p>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
